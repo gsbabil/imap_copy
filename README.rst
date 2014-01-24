@@ -4,7 +4,8 @@ IMAP Copy
 This is a very simple tool to copy folders from one IMAP server to another server.
 
 
-Example:
+**Example:**
+
 
 The example below copies all messages from the INBOX of your "other-server" into
 the 'OTHER-SERVER/Inbox' folder of Gmail.
@@ -37,7 +38,8 @@ message no. 124 to 223 into Gmail.
     "imap.googlemail.com:993" "username@gmail.com:password" \
     "INBOX" "OTHER-SERVER/Inbox" --skip 123 --limit 100
 
-Usage:
+**Usage:**
+
 
 .. code::
  

@@ -41,7 +41,7 @@ message no. 124 to 223 into Gmail.
 **Usage:**
 
 
-.. code::
+::
  
     usage: imapcopy.py [-h] [-q] [-v]
                    source source-auth destination destination-auth mailboxes
@@ -65,4 +65,5 @@ message no. 124 to 223 into Gmail.
       -s N, --skip N    skip the first N message(s)
       -l N, --limit N   only copy N number of message(s)
   
+
 Only tested on Python 2.7!

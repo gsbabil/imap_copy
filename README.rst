@@ -6,10 +6,11 @@ This is a very simple tool to copy folders from one IMAP server to another serve
 
 Example:
 
-The example below copies all messages from the INBOX of your other server into
+The example below copies all messages from the INBOX of your "other-server" into
 the 'OTHER-SERVER/Inbox' folder of Gmail.
 
-::
+.. code:: sh
+
     python imapcopy.py "imap.otherserver.com.au:993" "username:password" \
     "imap.googlemail.com:993" "username@gmail.com:password" \
     "INBOX" "OTHER-SERVER/Inbox" --verbose
@@ -20,7 +21,8 @@ copying 123 emails out of your total 1000 emails in the example shown above,
 you may use the following command to resume copying skipping the first 123 
 messages.
 
-::
+.. code:: sh
+
     python imapcopy.py "imap.otherserver.com.au:993" "username:password" \
     "imap.googlemail.com:993" "username@gmail.com:password" \
     "INBOX" "OTHER-SERVER/Inbox" --skip 123
@@ -29,14 +31,16 @@ Similarly the 'limit' option allows you to copy only the N number of messages
 excluding the skipped messages. For example, the following command will copy
 message no. 124 to 223 into Gmail.
 
-::
+.. code:: sh
+
     python imapcopy.py "imap.otherserver.com.au:993" "username:password" \
     "imap.googlemail.com:993" "username@gmail.com:password" \
     "INBOX" "OTHER-SERVER/Inbox" --skip 123 --limit 100
 
 Usage:
 
-::
+.. code::
+ 
     usage: imapcopy.py [-h] [-q] [-v]
                    source source-auth destination destination-auth mailboxes
                    [mailboxes ...]
@@ -59,4 +63,4 @@ Usage:
       -s N, --skip N    skip the first N message(s)
       -l N, --limit N   only copy N number of message(s)
   
-Only tested on Python 2.7.
+Only tested on Python 2.7!
